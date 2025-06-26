@@ -1,0 +1,30 @@
+{
+    "name": "datpmwork/sentry-laravel-serverless",
+    "description": "Sentry integration for Laravel in serverless (bref) environments",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DatPM\\Sentry\\Serverless\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^8.0|^9.0|^10.0",
+        "sentry/sentry-laravel": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DatPM\\Sentry\\Serverless\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
